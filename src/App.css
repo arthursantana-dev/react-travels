@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+:root{
+	--content-font: 'Inter';
+	--main-color: #F55A5A;
+	--header-text: #FFFFFF;
+
+	--content-text: #2B283A;
+	--secondary-text: #918E9B;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+	padding: 0;
+	margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+	font-family: var(--content-font);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Header*/
+
+.app__header{
+	width: 100vw;
+	color: var(--header-text);
+	background-color: var(--main-color);
+	display: flex;
+	justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header__figure{
+	display: flex;
+	align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.figure__company-logo{
+	width:3rem;
+	filter: invert(100%);
+}
+
+.figure__company-name{
+	font-weight: 700;
+	font-size: 3rem;
+	text-transform: lowercase;
+	margin-left: 0.4rem;
+}
+
+/*Card list*/
+
+.card__list{
+	display: flex;
+	width: 100%;
+	flex-flow: column nowrap;
+}
+
+/*Card*/
+
+.card{
+	padding: 2rem;
+	margin: 1.2rem;
+	border-radius: 1.2rem;
+
+	display: flex;
+
+	color: var(--content-text);
+
+	-webkit-box-shadow: 3px 4px 33px 15px rgba(0,0,0,0.07);
+	-moz-box-shadow: 3px 4px 33px 15px rgba(0,0,0,0.07);
+	box-shadow: 3px 4px 33px 15px rgba(0,0,0,0.07);
+}
+
+.card__img{
+	width: max(14rem, 33vw);
+	height: 20rem;
+	object-fit: cover;
+	border-radius: 1.2rem;
+}
+
+.card__info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2.1rem;
+}
+
+.info__location{
+	margin-bottom: 0.4rem;
+}
+
+.location__icon{
+	height: 0.98rem;
+	margin-right: 0.3rem;
+}
+
+.location__name{
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	letter-spacing: 0.3rem;
+	margin-right: 2rem;
+}
+
+.location__maps a{
+	color: var(--secondary-text);
+}
+
+.card__title{
+	font-size: 3rem;
+	font-weight: 800;
+	margin-bottom: 2rem;
+}
+
+.card__date{
+	font-weight: 700;
+	margin-bottom: 1.1rem;
+}
+
+.card__description{
+	font-size: 1.2rem;
+}
+
+@media screen and (max-width: 700px){
+	.card{
+		flex-direction: column;
+	}
+
+	.card__img{
+		width: 100%;
+	}
 }
