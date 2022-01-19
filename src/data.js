@@ -1,13 +1,13 @@
 export default [
 	{
-		id: 0,
-        title: "Monte Fuji",
-        location: "Japão",
-        googleMapsUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
-        startDate: "12 Jan, 2021",
-        endDate: "24 Jan, 2021",
-        description: "O Monte Fuji é a montanha mais alta do Japão, com 3.776 metros (12.380 pés). O Monte Fuji é o local turístico mais popular do Japão, tanto para turistas japoneses quanto estrangeiros.",
-        imageUrl: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+		"id": 0,
+        "title": "Monte Fuji",
+        "location": "Japão",
+        "googleMapsUrl": "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
+        "startDate": "12 Jan, 2021",
+        "endDate": "24 Jan, 2021",
+        "description": "O Monte Fuji é a montanha mais alta do Japão, com 3.776 metros (12.380 pés). O Monte Fuji é o local turístico mais popular do Japão, tanto para turistas japoneses quanto estrangeiros.",
+        "imageUrl": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
     },
 	{
 		id: 2,
